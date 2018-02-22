@@ -17,14 +17,13 @@
         METRIXIR.server = Object.assign({
             protocol: 'https',
             host: 'metrixir.herokuapp.com',
-            tag: 'tiscon3.team.xxxxxxx' // FIXME: `xxxxxxx` をチーム名に変更してください.
+            tag: 'tiscon3.team.matcha' // FIXME: `matcha` をチーム名に変更してください.
         }, METRIXIR.server);
     </script>
 
     <title layout:title-pattern="$CONTENT_TITLE | $DECORATOR_TITLE">TISCON</title>
 </head>
 <body>
-<div layout:replace="layout/header::header"></div>
 
 <div class="pusher">
     <div layout:fragment="content"></div>
