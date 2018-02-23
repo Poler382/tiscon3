@@ -34,10 +34,10 @@
                                 <label>お名前（漢字）</label>
                                 <div class="two fields">
                                     <div class="field">
-                                        <input type="text" name="kanjiName" th:value="${form.kanjiName}" placeholder="姓"/>
+                                        <input type="text" name="kanjiNameL" th:value="${form.kanjiNameL}" placeholder="(例)山田"/>
                                     </div>
                                     <div class="field">
-                                        <input type="text" name="kanjiName" th:value="${form.kanjiName}" placeholder="名"/>
+                                        <input type="text" name="kanjiNameF" th:value="${form.kanjiNameF}" placeholder="太郎"/>
                                     </div>
                                 </div>
                             </div>
@@ -47,10 +47,10 @@
                                 <label>お名前（カナ）</label>
                                 <div class="two fields">
                                     <div class="field">
-                                        <input type="text" name="kanaName" th:value="${form.kanaName}" placeholder="セイ"/>
+                                        <input type="text" name="kanaNameL" th:value="${form.kanaNameL}" placeholder="(例)ヤマダ"/>
                                     </div>
                                     <div class="field">
-                                        <input type="text" name="kanaName" th:value="${form.kanaName}" placeholder="メイ"/>
+                                        <input type="text" name="kanaNameF" th:value="${form.kanaNameF}" placeholder="タロウ"/>
                                     </div>
                                 </div>
                             </div>
@@ -60,10 +60,10 @@
                                 <label>お名前（ローマ字）</label>
                                 <div class="two fields">
                                     <div class="field">
-                                        <input type="text" name="alphabetName" th:value="${form.alphabetName}"  placeholder="Last Name"/>
+                                        <input type="text" name="alphabetNameL" th:value="${form.alphabetNameL}"  placeholder="(例)yamada"/>
                                     </div>
                                     <div class="field">
-                                        <input type="text" name="alphabetName" th:value="${form.alphabetName}"  placeholder="First Name"/>
+                                        <input type="text" name="alphabetNameF" th:value="${form.alphabetNameF}"  placeholder="taro"/>
                                     </div>
                                 </div>
                             </div>
@@ -84,10 +84,12 @@
                                 <label>生年月日</label>
                                 <div class="three fields">
                                     <div class="filed">
-                                        <input type="text" name="dateOfBirth" th:value="${form.dateOfBirth}" placeholder="(例)2000"/>年
-                                    </div>
+                                        <input type="text" name="dateOfBirth1" th:value="${form.dateOfBirth1}" placeholder="(例)2000"/>
+                                    </div>年
+
                                     <div class="filed">
-                                        <select class="ui fluid search dropdown" name="date0Birth[month]">
+                                        <input type="text" name="dateOfBirth2" th:value="${form.dateOfBirth2}" placeholder="01"/>
+                                        <!--<select class="ui fluid search dropdown" name="date0Birth2">
                                             <option value="">月</option>
                                             <option value="1">01</option>
                                             <option value="2">02</option>
@@ -101,11 +103,12 @@
                                             <option value="10">10</option>
                                             <option value="11">11</option>
                                             <option value="12">12</option>
-                                        </select>
-                                    </div>
+                                        </select> -->
+                                    </div>月
+
                                     <div class="filed">
-                                        <input type="text" name="dateOfBirth" th:value="${form.dateOfBirth}" placeholder="01"/>日
-                                    </div>
+                                        <input type="text" name="dateOfBirth3" th:value="${form.dateOfBirth3}" placeholder="01"/>
+                                    </div>日
                                     <label></label>
                                 </div>
                             </div>
@@ -135,15 +138,15 @@
                                 <label>自宅電話番号</label>
                                 <div class="three fields">
                                     <div class="field">
-                                        <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}" placeholder="(例)080"/>
+                                        <input type="text" name="homePhoneNumber1" th:value="${form.homePhoneNumber1}" placeholder="(例)080"/>
                                     </div>
                                     <div>-</div>
                                     <div class="field">
-                                        <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}" placeholder="1234"/>
+                                        <input type="text" name="homePhoneNumber2" th:value="${form.homePhoneNumber2}" placeholder="1234"/>
                                     </div>
                                     <div>-</div>
                                     <div class="field">
-                                        <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}" placeholder="5678"/>
+                                        <input type="text" name="homePhoneNumber3" th:value="${form.homePhoneNumber3}" placeholder="5678"/>
                                     </div>
                                 </div>
                             </div>
@@ -152,15 +155,15 @@
                                 <label>携帯電話番号</label>
                                 <div class="three fields">
                                     <div class="field">
-                                        <input type="text" name="mobilePhoneNumber" th:value="${form.mobilePhoneNumber}" placeholder="(例)080"/>
+                                        <input type="text" name="mobilePhoneNumber1" th:value="${form.mobilePhoneNumber1}" placeholder="(例)070"/>
                                     </div>
                                     <div>-</div>
                                     <div class="field">
-                                        <input type="text" name="mobilePhoneNumber" th:value="${form.mobilePhoneNumber}" placeholder="1234"/>
+                                        <input type="text" name="mobilePhoneNumber2" th:value="${form.mobilePhoneNumber2}" placeholder="1234"/>
                                     </div>
                                     <div>-</div>
                                     <div class="field">
-                                        <input type="text" name="mobilePhoneNumber" th:value="${form.mobilePhoneNumber}" placeholder="5678"/>
+                                        <input type="text" name="mobilePhoneNumber3" th:value="${form.mobilePhoneNumber3}" placeholder="5678"/>
                                     </div>
                                 </div>
                             </div>
@@ -170,11 +173,10 @@
                                 <label>メールアドレス</label>
                                 <div class="two fields">
                                     <div class="field">
-                                        <input type="text" name="emailAddress" th:value="${form.emailAddress}"/>
-                                    </div>
-                                    <dev>@</dev>
+                                        <input type="text" name="emailAddress1" th:value="${form.emailAddress1}"/>
+                                    </div>@
                                     <div class="field">
-                                        <input type="text" name="emailAddress" th:value="${form.emailAddress}"/>
+                                        <input type="text" name="emailAddress2" th:value="${form.emailAddress2}"/>
                                     </div>
                                 </div>
                             </div>
