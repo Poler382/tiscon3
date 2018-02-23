@@ -8,7 +8,6 @@
 <head>
     <title>新規作成</title>
     <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
-
     <script src="/assets/js/metrixir.client.js"></script>
 </head>
 <body>
@@ -115,23 +114,35 @@
 
                                 <div class="field" th:classappend="${form.hasErrors('zipCode')} ? 'error'">
                                     <label>郵便番号</label>
-                                    <!--<input type="text" class="zipcode" name="zipCode" th:value="${form.zipCode}"/>-->
+                                    <!--<input type="text" class="zipcode" name="zipCode" th:value="${form.zipCode}"/>?-->
                                     <!--<input type="text" name="zip21" size="2" maxlength="3"> － <input type="text" name="zip22" size="2" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','pref21','addr21','strt21');">-->
                                     <div class="two fields">
-                                        <input type="text" class="number" name="zip21" size="2" maxlength="3">－ <input type="text" class="number" name="zip22" size="2" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','pref21','addr21','strt21');"
+                                        <input type="text" class="number" name="zip21" size="2" maxlength="3">－ <input type="text" class="number" name="zip22" size="2" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','pref21','addr22','addr23');"
                                     </div>
                                 </div>
-                            <div class="field" th:classappend="${form.hasErrors('address')} ? 'error'">
+                             <div class="field" th:classappend="${form.hasErrors('address')} ? 'error'">
                                 <label>ご住所</label>
                                 <div class="field" th:classappend="${form.hasErrors('address')} ? 'error'">
                                 <labal>都道府県</labal>
-                                <!--<input type="text" name="address" th:value="${form.address}"/>-->
+                               <!--? &lt;!&ndash;<input type="text" name="address" th:value="${form.address}"/>&ndash;&gt;-->
                                     <input type="text" name="pref21" size="40">
                                 <labal>市区町村</labal>
                                     <input type="text" name="addr22" size="40">
                                 <labal>そのあとのご住所</labal>
                                     <input type="text" name="strt23" size="40">
                             </div>
+
+<!--
+
+                            <label>ご住所</label>
+                            &lt;!&ndash; ▼郵便番号入力フィールド(3桁+4桁) &ndash;&gt;
+                            <input type="text" name="zip31" size="4" maxlength="3"> － <input type="text" name="zip32" size="5" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip31','zip32','pref31','addr31','addr31');">
+                            &lt;!&ndash; ▼住所入力フィールド(都道府県) &ndash;&gt;
+                            <input type="text" name="pref31" size="20">
+                            &lt;!&ndash; ▼住所入力フィールド(都道府県以降の住所) &ndash;&gt;
+                            <input type="text" name="addr31" size="40">
+-->
+
 
                             <!--電話番号わけ-->
                         <div class="field" th:classappend="${form.hasErrors('homePhoneNumber')} ? 'error'">
