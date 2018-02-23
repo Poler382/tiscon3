@@ -40,12 +40,12 @@ public class CardOrderForm extends FormBase {
 
     @NotBlank
     @Size(max = 10)
-    @Pattern(regexp = "\\d{4}/$")
+    @Pattern(regexp = "\\d{4}$")
     private String dateOfBirth1;
 
     @NotBlank
     @Size(max = 10)
-    @Pattern(regexp = "\\d{1,2}/$")
+    @Pattern(regexp = "\\d{1,2}$")
     private String dateOfBirth2;
 
     @NotBlank
@@ -60,7 +60,7 @@ public class CardOrderForm extends FormBase {
 
     @NotBlank
     @Size(max = 8)
-    @Pattern(regexp = "^[0-9]{3}-$")
+    @Pattern(regexp = "^[0-9]{3}$")
     private String zipCode1;
 
     @NotBlank
@@ -74,12 +74,12 @@ public class CardOrderForm extends FormBase {
 
     @NotBlank
     @Size(max = 13)
-    @Pattern(regexp = "^0[0-9]{1,3}-$")
+    @Pattern(regexp = "^0[0-9]{1,3}$")
     private String homePhoneNumber1;
 
     @NotBlank
     @Size(max = 13)
-    @Pattern(regexp = "^[0-9]{2,4}-$")
+    @Pattern(regexp = "^[0-9]{2,4}$")
     private String homePhoneNumber2;
 
     @NotBlank
@@ -88,11 +88,11 @@ public class CardOrderForm extends FormBase {
     private String homePhoneNumber3;
 
     @Size(max = 13)
-    @Pattern(regexp = "^((070|080|090)-$")
+    @Pattern(regexp = "^((070|080|090)$")
     private String mobilePhoneNumber1;
 
     @Size(max = 13)
-    @Pattern(regexp = "^([0-9]{4}-$")
+    @Pattern(regexp = "^([0-9]{4}$")
     private String mobilePhoneNumber2;
 
     @Size(max = 13)
