@@ -36,7 +36,9 @@ public class CardOrderForm extends FormBase {
     @NotBlank
     @Size(max = 120)
     @Pattern(regexp = "^[a-zA-Z 　]*$")
-    private String alphabetNameF;
+    private String alphabetNameR;
+
+
 
     @NotBlank
     @Size(max = 10)
@@ -68,9 +70,19 @@ public class CardOrderForm extends FormBase {
     @Pattern(regexp = "^[0-9]{4}$")
     private String zipCode2;
 
+
     @NotBlank
-    @Size(max = 255)
-    private String address;
+    @Size(max = 40)
+    private String pref21;
+
+    @NotBlank
+    @Size(max = 40)
+    private String addr22;
+
+    @NotBlank
+    @Size(max = 40)
+    private String addr23;
+
 
     @NotBlank
     @Size(max = 13)

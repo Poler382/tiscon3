@@ -88,7 +88,9 @@ public class CardOrderController {
         cardOrder.setDateOfBirth(form.getDateOfBirth1()+"/"+form.getDateOfBirth2()+"/"+form.getDateOfBirth3());
         cardOrder.setHomePhoneNumber(form.getHomePhoneNumber1()+"-"+form.getHomePhoneNumber2()+"-"+form.getHomePhoneNumber3());
         cardOrder.setMobilePhoneNumber(form.getMobilePhoneNumber1()+"-"+form.getMobilePhoneNumber2()+"-"+form.getMobilePhoneNumber3());
-        cardOrder.setEmailAddress(form.getEmailAddress1()+"@"+form.getEmailAddress2());
+        cardOrder.getEmailAddress(form.getEmailAddress1()+"@"+form.getEmailAddress2());
+        cardOrder.setsetAddress(form.pref21+form.addr22+form.addr23)
+
 
 
         cardOrderDao.insert(cardOrder);
