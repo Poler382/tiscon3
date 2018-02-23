@@ -100,11 +100,11 @@ public class CardOrderForm extends FormBase {
     private String homePhoneNumber3;
 
     @Size(max = 13)
-    @Pattern(regexp = "^((070|080|090)$")
+    @Pattern(regexp = "^((070|080|090))$")
     private String mobilePhoneNumber1;
 
     @Size(max = 13)
-    @Pattern(regexp = "^([0-9]{4}$")
+    @Pattern(regexp = "^([0-9]{4})$")
     private String mobilePhoneNumber2;
 
     @Size(max = 13)
