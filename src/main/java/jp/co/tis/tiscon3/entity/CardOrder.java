@@ -24,6 +24,8 @@ public class CardOrder {
     @Column(name = "KANJI_NAME")
     String kanjiName;
 
+
+
     /**  */
     @Column(name = "KANA_NAME")
     String kanaName;
