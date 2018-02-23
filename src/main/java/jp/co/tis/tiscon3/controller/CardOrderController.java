@@ -84,11 +84,11 @@ public class CardOrderController {
         CardOrder cardOrder = beans.createFrom(form, CardOrder.class);
         cardOrder.setKanjiName(form.getKanjiNameL()+form.getKanjiNameF());
         cardOrder.setKanaName(form.getKanaNameL()+form.getKanaNameF());
-        cardOrder.setAlphabetName(form.getAlphabetNameF()+form.getAlphabetNameL());
+        cardOrder.setAlphabetName(form.getAlphabetNameL()+form.getAlphabetNameF());
         cardOrder.setDateOfBirth(form.getDateOfBirth1()+"/"+form.getDateOfBirth2()+"/"+form.getDateOfBirth3());
         cardOrder.setHomePhoneNumber(form.getHomePhoneNumber1()+"-"+form.getHomePhoneNumber2()+"-"+form.getHomePhoneNumber3());
         cardOrder.setMobilePhoneNumber(form.getMobilePhoneNumber1()+"-"+form.getMobilePhoneNumber2()+"-"+form.getMobilePhoneNumber3());
-        cardOrder.getEmailAddress(form.getEmailAddress1()+"@"+form.getEmailAddress2());
+        cardOrder.setEmailAddress(form.getEmailAddress1()+"@"+form.getEmailAddress2());
 
 
         cardOrderDao.insert(cardOrder);
